@@ -1,0 +1,63 @@
+#wrapper{
+    width: 960px;
+    margin: 0 auto;        /* auto让wrapper居中了*/
+    border: 1px solid;
+    /* overflow: hidden; 用于让wrapper包裹浮动的子元素的一种方法，不过不能用在有下拉菜单的顶级元素上。此外浮动wrapper也可以包裹子元素，但margin0auto的自动居中就无法使用了。 */
+}
+.clearfix::after{             /* 用于包裹子元素 */
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+    clear: both;
+} 
+nav{
+    width: 150px;
+    float: left;
+    background: #dcd9c0;
+    padding: 10px;
+    box-sizing: border-box;
+}
+nav li{
+    list-style-type: none;
+}
+article{
+    width: 600px;
+    float: left;
+    background: #ffed53;
+    padding: 10px 20px;
+    box-sizing: border-box;
+}
+
+aside{
+    width: 210px;
+    float: left;
+    background: #3f7ccf;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+header{
+    background: #f00;
+}
+footer{
+    color: white;
+    background: #000;
+    clear: both;
+}
+
+/* article .inner{
+    padding: 10px 20px;
+}
+
+nav .inner{
+    padding: 10px;
+}
+
+aside .inner{
+    padding: 10px;
+} */
+
+footer{
+    text-align: center;
+}
